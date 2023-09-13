@@ -46,9 +46,26 @@
     grid-area: six;
 }
 
+.pet__wrapper {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 48px;
+    max-height: 722px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+    "one one one one one two two two six six six six"
+    "three three three four four four five five six six six six";
+}
+
 
 .pet__img {
     margin-bottom: 13px;
+    max-width: 100%;
+    object-position: center;
+    object-fit: cover;
+    flex: 1 0 auto;
+    width: 100%;
+    height: auto;
 }
 
 .pet__figcaption{
@@ -80,31 +97,31 @@
         "three three four four five five six six six";
     }
 
-    .pet__img_pig {
-        width: 380px;
-        height: 201px;
-    }
+    /*.pet__img_pig {*/
+    /*    width: 380px;*/
+    /*    height: 201px;*/
+    /*}*/
 
-    .pet__img_cat {
-        width: 180px;
-        height: 201px;
-    }
+    /*.pet__img_cat {*/
+    /*    width: 180px;*/
+    /*    height: 201px;*/
+    /*}*/
 
-    .pet__img_dog {
-        width: 180px;
-    }
+    /*.pet__img_dog {*/
+    /*    width: 180px;*/
+    /*}*/
 
-    .pet__img_mouse {
-        width: 180px;
-    }
+    /*.pet__img_mouse {*/
+    /*    width: 180px;*/
+    /*}*/
 
-    .pet__img_parrot {
-        width: 180px;
-    }
+    /*.pet__img_parrot {*/
+    /*    width: 180px;*/
+    /*}*/
 
-    .pet__img_cat-dog{
-        width: 280px;
-    }
+    /*.pet__img_cat-dog{*/
+    /*    width: 280px;*/
+    /*}*/
 }
 
 @media (max-width: 1024px) {
@@ -128,39 +145,42 @@
         padding-left: 48px;
     }
 
-    .pet__img_pig {
-        width: 460px;
-        height: 243px;
-    }
+    /*.pet__img_pig {*/
+    /*    width: 460px;*/
+    /*    height: 243px;*/
+    /*}*/
 
-    .pet__img_cat {
-        width: 216px;
-        height: 243px;
-    }
+    /*.pet__img_cat {*/
+    /*    width: 216px;*/
+    /*    height: 243px;*/
+    /*}*/
 
-    .pet__img_dog {
-        width: 332px;
-        height: 332px;
-    }
+    /*.pet__img_dog {*/
+    /*    width: 332px;*/
+    /*    height: 332px;*/
+    /*}*/
 
-    .pet__img_mouse {
-        width: 331px;
-        height: 332px;
-    }
+    /*.pet__img_mouse {*/
+    /*    width: 331px;*/
+    /*    height: 332px;*/
+    /*}*/
 
-    .pet__img_parrot {
-        width: 294px;
-        height: 459px;
-    }
+    /*.pet__img_parrot {*/
+    /*    width: 294px;*/
+    /*    height: 459px;*/
+    /*}*/
 
-    .pet__img_cat-dog{
-        width: 379px;
-        height: 647px;
-    }
+    /*.pet__img_cat-dog{*/
+    /*    width: 379px;*/
+    /*    height: 647px;*/
+    /*}*/
 
 }
 
 @media (max-width: 768px) {
+    .pet {
+        padding-top: 50px;
+    }
     .pet__wrapper {
         gap: 20px 0;
         grid-template-areas:

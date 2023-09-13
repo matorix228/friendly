@@ -265,6 +265,7 @@
     .project__wrapper {
         grid-template-columns: 1fr;
     }
+
     .project__title {
         font-size: 20px;
         line-height: 24px;
@@ -272,9 +273,7 @@
     }
 
     .project__img {
-        width: 130px;
-        height: 134px;
-        background-size: cover;
+        background-size: 130px 134px;
     }
 
     .project__description {
@@ -313,14 +312,6 @@
         padding: 255px 10px 51px;
         background-size: unset;
         width: 270px;
-    }
-
-    .project__link_banner {
-
-    }
-
-    .project__title_h2 {
-
     }
 
     .project__album {
